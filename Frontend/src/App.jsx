@@ -1,12 +1,14 @@
 import { useEffect, useState } from 'react';
 
+const API_URL = "https://event-management-system-backend-ud2l.onrender.com";
+
 export default function App() {
   const [seats, setSeats] = useState([]);
   const [statusMessage, setStatusMessage] = useState('');
 
   // Fetch seat array metrics from backend architecture API
   const syncSeatingData = () => {
-    fetch('http://localhost:5001/api/events/1/seats')
+    fetch(`${API_URL}/api/events/1/seats`)
       .then((res) => res.json())
       .then((data) => setSeats(data))
       .catch((err) => console.error('Data pipeline error:', err));
@@ -18,7 +20,7 @@ export default function App() {
 
   // Post booking update request on button click interactions
   const triggerSeatReservation = (seatNumber) => {
-    fetch('http://localhost:5001/api/bookings', {
+    fetch(`${API_URL}/api/bookings`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ event_id: 1, seat_number: seatNumber }),
