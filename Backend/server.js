@@ -43,4 +43,10 @@ app.post('/api/bookings', (req, res) => {
   );
 });
 
-app.listen(5001, () => console.log('Backend server running securely on port 5001'));
+
+const PORT = process.env.PORT || 5001;
+
+app.listen(PORT, "0.0.0.0", () => {
+    console.log(`Server running on port ${PORT}`);
+});
+
