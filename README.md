@@ -121,7 +121,7 @@ The application initializes a sample event called **Rock Concert 2026**, with 40
 - Node.js and npm
 - VS Code or any code editor
 - Modern web browser
-- macOS, Windows, or Linux
+- MacOS, Windows, or Linux
 
 ## 🔮 Future Enhancements
 
