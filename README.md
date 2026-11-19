@@ -33,16 +33,14 @@ Event Management System/
 │   ├── package.json
 │   └── tickets.db
 │
-├── frontend/
+├── Frontend/
 │   ├── src/
 │   │   ├── App.jsx
 │   │   ├── main.jsx
 │   │   └── index.css
 │   ├── index.html
 │   ├── package.json
-│   ├── vite.config.js
-│   ├── tailwind.config.js
-│   └── postcss.config.js
+│   └── vite.config.js
 │
 └── README.md
 ```
@@ -58,7 +56,7 @@ git clone https://github.com/anubhavrathi/Event-Management-System.git
 ### 2. Navigate to the Project Directory
 
 ```bash
-cd "Event Management System"
+cd Event-Management-System
 ```
 
 ### 3. Setup the Backend
@@ -75,10 +73,10 @@ The backend server will run at:
 
 ### 4. Setup the Frontend
 
-Open another terminal:
+Open another terminal from the project root:
 
 ```bash
-cd "Event Management System/frontend"
+cd Frontend
 npm install
 npm run dev
 ```
@@ -114,14 +112,14 @@ The application uses SQLite with two main tables:
 - Seat Number
 - Booking Status
 
-The application initializes a sample event called **Rock Concert 2026**, with 40 seats.
+The application initializes a sample event called **Rock Concert 2026**, scheduled for December 25, 2026, with 40 seats.
 
 ## 💻 Requirements
 
 - Node.js and npm
 - VS Code or any code editor
 - Modern web browser
-- MacOS, Windows, or Linux
+- macOS, Windows, or Linux
 
 ## 🔮 Future Enhancements
 
@@ -136,7 +134,7 @@ The application initializes a sample event called **Rock Concert 2026**, with 40
 
 **Anubhav Rathi**
 
-BCA Graduate
+BCA Student
 
 ## 📄 License
 
